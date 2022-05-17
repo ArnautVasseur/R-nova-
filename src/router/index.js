@@ -1,9 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Homepage from '../views/Homepage.vue'
+import Favoris from '../views/Favoris.vue'
+import User from '../views/User.vue'
+import Profil from '../views/Profil.vue'
+import Messagerie from '../views/Messagerie.vue'
+import Conversation from '../views/Conversation.vue'
+import Achat from '../views/Achat.vue'
+import Comparaison from '../views/Comparaison.vue'
+import Ajout from '../views/Ajout.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    
+    { path: '/',         name: 'home',  component: Homepage },
+    { path: '/favoris',  name: 'favoris',  component: Favoris },
+    { path: '/user',  name: 'user',  component: User },
+    { path: '/profil',  name: 'profil',  component: Profil },
+    { path: '/messagerie',  name: 'messagerie',  component: Messagerie },
+    { path: '/conversation',  name: 'conversation',  component: Conversation },
+    { path: '/achat',  name: 'achat',  component: Achat },
+    { path: '/comparaison',  name: 'comparaison',  component: Comparaison },
+    { path: '/ajout',  name: 'ajout',  component: Ajout }
   ]
 })
 
