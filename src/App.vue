@@ -1,7 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-
-
 </script>
 
 <template>
@@ -28,11 +26,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <script>
-
 export default {
         name: "",
         components: {
-            
         },
     };
 </script>

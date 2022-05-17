@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-auto border-2 w-auto h-auto rounded-2xl bg-white border-orange grid grid-cols-5">
+  <div class="overflow-auto border-2 w-96 h-60 rounded-2xl bg-white border-orange grid grid-cols-5">
       <div class="col-span-2">
         <img
             :src="image"
@@ -121,7 +121,7 @@
                 {{title}}
                 </p>
                 <div class="mr-12">
-                    <img src="../assets/Heart.svg" alt="Heart" class="absolute ml-1" :class="{'fill-heartred': heart}">
+                    <img src="../components/icons/Heart.svg" alt="Heart" class="absolute ml-1" :class="{'fill-heartred': heart}">
                 </div>
             </div>
 
