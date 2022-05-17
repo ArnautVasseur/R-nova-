@@ -18,7 +18,9 @@ module.exports = {
       "beige": "#ebcfb2",
       "light_beige": "#ffe0b5",
       "orange":"#EAB270",
-      "gray":"#F7F7F7"
+      "gray":"#F7F7F7",
+      "white":"#FFFFFF",
+      "bright_green":"#A1F493"
      },
     extend: {},
   },

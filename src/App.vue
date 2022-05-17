@@ -22,13 +22,16 @@ import { RouterLink, RouterView } from 'vue-router'
         </RouterLink>
       </div>
     <RouterView/>
+    <SendButton/>
   </div>
 </template>
 
 <script>
+
 export default {
         name: "",
         components: {
+          
         },
     };
 </script>
