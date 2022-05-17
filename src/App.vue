@@ -8,19 +8,19 @@ import { RouterLink, RouterView } from 'vue-router'
   <div>
       <div class="flex overflow-hidden fixed bottom-0 w-full justify-around items-center py-4 bg-gray">
         <RouterLink to="/">
-          <img src="./assets/Home.svg" alt="Home">
+          <img src="./components/icons/Home.svg" alt="Home">
         </RouterLink>
-        <RouterLink to="/">
-          <img src="./assets/Mail.svg" alt="Mail">
+        <RouterLink to="/messagerie">
+          <img src="./components/icons/Mail.svg" alt="Messagerie">
         </RouterLink>
-        <RouterLink to="/">
-          <img src="./assets/Plus.svg" alt="Plus">
+        <RouterLink to="/ajout">
+          <img src="./components/icons/Plus.svg" alt="Plus">
         </RouterLink>
-        <RouterLink to="/">
-          <img src="./assets/Heart.svg" alt="Heart">
+        <RouterLink to="/favoris">
+          <img src="./components/icons/Heart.svg" alt="Heart">
         </RouterLink>
-        <RouterLink to="/">
-          <img src="./assets/user.svg" alt="User">
+        <RouterLink to="/user">
+          <img src="./components/icons/user.svg" alt="User">
         </RouterLink>
       </div>
     <RouterView/>
