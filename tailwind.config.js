@@ -16,7 +16,9 @@ module.exports = {
       "brightest_brown": "#a5907e",
       "flashy_green": "#bdd358",
       "beige": "#ebcfb2",
-      "light_beige": "#ffe0b5"
+      "light_beige": "#ffe0b5",
+      "orange":"#EAB270",
+      "gray":"#F7F7F7"
      },
     extend: {},
   },
