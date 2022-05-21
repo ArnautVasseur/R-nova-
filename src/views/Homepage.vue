@@ -5,6 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
     <div class="mx-7">
         <h1 class="font-bold text-lg mt-10 mb-5">Recherche d'articles</h1>
+        <SearchBar class="mb-5"/>
         <div class="mb-2 flex justify-between">
             <h2 class="font-bold text-lg">Pour toi</h2>
             <p class="text-orange">Voir d'autres objets</p>
@@ -196,11 +197,12 @@ import { RouterLink, RouterView } from 'vue-router'
 <script>
 import Card from '../components/Card.vue';
 import CardDon from '../components/CardDon.vue';
+import SearchBar from "../components/SearchBar.vue"
 
 export default {
         name: "",
         components: {
-            Card, CardDon
+            Card, CardDon, SearchBar
         },
     };
 </script>
