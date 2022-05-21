@@ -6,7 +6,7 @@
         <div class="mx-5 mb-10">
             <h2 class="mb-2">Titre</h2>
             <input type="text" 
-            class="bg-dark_gray w-full rounded-lg p-3"
+            class="bg-darker_gray w-full rounded-lg p-3"
             placeholder="ex: Vélo bleu">
         </div>
 
@@ -52,5 +52,8 @@ export default {
         components: {
             AddArticle, PostingArticle
         },
+        created() {
+        document.body.style.backgroundColor = "#FFFFFF";
+    },
     };
 </script>

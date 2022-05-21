@@ -21,7 +21,7 @@ import { RouterLink, RouterView } from 'vue-router'
             :renovation="false"
             title="Velo bleu"
             pp="src\assets\images\balland.png"
-            followers="419"
+            :followers="419"
             :star1="true"
             :star2="true"
             :star3="true"
@@ -40,7 +40,7 @@ import { RouterLink, RouterView } from 'vue-router'
             :renovation="true"
             title="Velo marron"
             pp="src\assets\images\balland.png"
-            followers="142"
+            :followers="142"
             :star1="true"
             :star2="true"
             :star3="false"
@@ -122,7 +122,7 @@ import { RouterLink, RouterView } from 'vue-router'
             :price="40"
             title="Skate peint"
             pp="src\assets\images\small-painting.jpg"
-            followers="698"
+            :followers="698"
             :star1="true"
             :star2="true"
             :star3="true"
@@ -141,7 +141,7 @@ import { RouterLink, RouterView } from 'vue-router'
             :price="5"
             title="Skate"
             pp="src\assets\images\balland.png"
-            followers="61"
+            :followers="61"
             :star1="true"
             :star2="false"
             :star3="false"
@@ -163,7 +163,7 @@ import { RouterLink, RouterView } from 'vue-router'
             :price="40"
             title="Skate peint"
             pp="src\assets\images\small-painting.jpg"
-            followers="698"
+            :followers="698"
             :star1="true"
             :star2="true"
             :star3="true"
@@ -182,7 +182,7 @@ import { RouterLink, RouterView } from 'vue-router'
             :price="5"
             title="Skate"
             pp="src\assets\images\balland.png"
-            followers="61"
+            :followers="61"
             :star1="true"
             :star2="false"
             :star3="false"
@@ -200,9 +200,12 @@ import CardDon from '../components/CardDon.vue';
 import SearchBar from "../components/SearchBar.vue"
 
 export default {
-        name: "",
-        components: {
-            Card, CardDon, SearchBar
-        },
+    name: "",
+    components: {
+        Card, CardDon, SearchBar
+    },
+    created() {
+        document.body.style.backgroundColor = "#FFFFFF";
+    },
     };
 </script>

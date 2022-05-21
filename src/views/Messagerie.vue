@@ -1,3 +1,16 @@
 <template>
-    <h1 class="text-center">Messagerie</h1>
+  
 </template>
+
+<script>
+export default {
+    name:"",
+    created() {
+        document.body.style.backgroundColor = "#FFFFFF";
+    },
+}
+</script>
+
+<style>
+
+</style>

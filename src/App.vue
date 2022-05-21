@@ -4,7 +4,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div>
-      <div class="flex overflow-hidden fixed bottom-0 w-full justify-around items-center py-4 bg-gray">
+      <div class="flex overflow-hidden fixed bottom-0 w-full justify-around items-center py-4 bg-gray"
+      v-if="!['inscription', 'connexion'].includes($route.name)">
         <RouterLink to="/">
           <img src="./components/icons/Home.svg" alt="Home">
         </RouterLink>

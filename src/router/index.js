@@ -8,6 +8,8 @@ import Conversation from '../views/Conversation.vue'
 import Achat from '../views/Achat.vue'
 import Comparaison from '../views/Comparaison.vue'
 import Ajout from '../views/Ajout.vue'
+import Connexion from '../views/Connexion.vue'
+import Inscription from '../views/Inscription.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,7 +22,9 @@ const router = createRouter({
     { path: '/conversation',  name: 'conversation',  component: Conversation },
     { path: '/achat',  name: 'achat',  component: Achat },
     { path: '/comparaison',  name: 'comparaison',  component: Comparaison },
-    { path: '/ajout',  name: 'ajout',  component: Ajout }
+    { path: '/ajout',  name: 'ajout',  component: Ajout },
+    { path: '/inscription',  name: 'inscription',  component: Inscription },
+    { path: '/connexion',  name: 'connexion',  component: Connexion }
   ]
 })
 
