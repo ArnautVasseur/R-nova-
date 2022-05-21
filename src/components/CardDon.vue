@@ -82,11 +82,7 @@
 
             <div class="flex justify-start gap-3 items-baseline my-3">
                 <p class="flex-grow-0 flex-shrink-0 text-[18.52747917175293px] font-bold text-left text-orange">
-                    {{price}}€
-                </p>
-
-                <p class="flex-grow-0 flex-shrink-0 text-[11.67735767364502px] text-left text-orange" :class="{'text-white':renovation}">
-                    ou renovation
+                    Don
                 </p>
             </div>
 

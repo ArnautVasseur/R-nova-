@@ -20,7 +20,9 @@ module.exports = {
       "orange":"#EAB270",
       "gray":"#F7F7F7",
       "white":"#FFFFFF",
-      "bright_green":"#A1F493"
+      "bright_green":"#A1F493",
+      "red":"#ef4444",
+      "black":"#000000"
      },
     extend: {},
   },
