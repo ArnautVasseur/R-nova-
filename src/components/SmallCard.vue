@@ -1,6 +1,6 @@
 <template>
-    <div class="w-36 h-52 bg-gray rounded-2xl shadow-xl">
-        <img :src="image" alt="article" class="w-full h-32 rounded-t-2xl mb-3">
+    <div class="w-36 h-60 bg-gray rounded-2xl shadow-xl">
+        <img :src="image" alt="article" class="w-full h-40 rounded-t-2xl mb-3">
         <div class="flex justify-around">
             <p>{{title}}</p>
             <p>{{distance}} km</p>
