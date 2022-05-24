@@ -14,7 +14,7 @@
           </header>
           <main class="flex-auto basis-96">
             <p class="w-full text-sm text-left text-black">
-              {{ evaluation1 }}
+              {{ description1 }}
             </p>
             <br />
             <div class="align-bottom flex">
@@ -109,6 +109,8 @@
       </div>
       <br />
       <div>
+
+      <hr class="mb-3 border-0 h-[2px] bg-orange">
         <section class="flex">
           <header class="flex-none">
             <div class="w-20 p-2">
@@ -117,7 +119,7 @@
           </header>
           <main class="flex-auto basis-96">
             <p class="w-full text-sm text-left text-black">
-              {{ evaluation2 }}
+              {{ description2 }}
             </p>
             <br />
             <div class="align-bottom flex">
@@ -218,11 +220,11 @@
 export default {
   props: {
     imageprofil1: String,
-    evaluation1: String,
-    nombredejour1: String,
+    description1: String,
+    nombredejour1: Number,
     imageprofil2: String,
-    evaluation2: String,
-    nombredejour2: String,
+    description2: String,
+    nombredejour2: Number,
     star1: Boolean,
     star2: Boolean,
     star3: Boolean,
