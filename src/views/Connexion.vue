@@ -14,9 +14,11 @@
             id="password"
             name="password">
         </div>
-        <OrangeButton class="m-auto block mb-10 hover:bg-dark_orange">
-            <slot>Connexion</slot>
-        </OrangeButton>
+        <a href="/">
+            <OrangeButton class="m-auto block mb-10 hover:bg-dark_orange">
+                <slot>Connexion</slot>
+            </OrangeButton>
+        </a>
         <p class="text-center mb-32 underline">J'ai oublié mon mot de passe</p>
     </div>
 </template>

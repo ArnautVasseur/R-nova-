@@ -11,45 +11,49 @@ import { RouterLink, RouterView } from 'vue-router'
             <p class="text-orange">Voir d'autres objets</p>
         </div>
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(384px,384px))] justify-between mb-5">
-            <Card class="mb-5"
-            image="src\assets\images\velo-wall-white.png"
-            :distance="27"
-            state="Neuf"
-            brand="SuperVelo"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            :price="30"
-            :renovation="false"
-            title="Velo bleu"
-            pp="src\assets\images\balland.png"
-            :followers="419"
-            :star1="true"
-            :star2="true"
-            :star3="true"
-            :star4="true"
-            :star5="false"
-            :heart="true"
-            name="Russel766"
-            />
-            <Card
-            image="src\assets\images\velo-wall-blue.png"
-            :distance="15"
-            state="Rouillé"
-            brand="Bikes"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            :price="22"
-            :renovation="true"
-            title="Velo marron"
-            pp="src\assets\images\balland.png"
-            :followers="142"
-            :star1="true"
-            :star2="true"
-            :star3="false"
-            :star4="false"
-            :star5="false"
-            :heart="false"
-            name="Gertude"/>
+            <a href="achat">
+                <Card class="mb-5"
+                image="src\assets\images\velo-wall-white.png"
+                :distance="27"
+                state="Neuf"
+                brand="SuperVelo"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                :price="30"
+                :renovation="false"
+                title="Velo bleu"
+                pp="src\assets\images\balland.png"
+                :followers="419"
+                :star1="true"
+                :star2="true"
+                :star3="true"
+                :star4="true"
+                :star5="false"
+                :heart="true"
+                name="Russel766"/>
+            </a>
+            <a href="achat">
+                <Card
+                image="src\assets\images\velo-wall-blue.png"
+                :distance="15"
+                state="Rouillé"
+                brand="Bikes"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                :price="22"
+                :renovation="true"
+                title="Velo marron"
+                pp="src\assets\images\balland.png"
+                :followers="142"
+                :star1="true"
+                :star2="true"
+                :star3="false"
+                :star4="false"
+                :star5="false"
+                :heart="false"
+                name="Gertude"/>
+            </a>
         </div>
         <h2 class="w-2/3 font-bold text-lg mb-3">Profils qui pourrait vous intéresser</h2>
+        <a href="profil">
         <div class="mb-10 border-2 rounded-xl border-orange p-5 flex">
             <div class="flex flex-col mr-4">
                 <img src="../assets/images/balland.png" alt="Russel" class="w-16">
@@ -110,28 +114,31 @@ import { RouterLink, RouterView } from 'vue-router'
                 adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua.</p>
         </div>
+        </a>
 
         <h2 class="w-2/3 font-bold text-lg mb-2">Articles dans la catégorie "Skate"</h2>
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(384px,384px))] justify-between mb-10">
-            <Card class="mb-5"
-            image="src\assets\images\skate-yellow.png"
-            :distance="27"
-            state="Usé"
-            brand="Supreme"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            :price="40"
-            title="Skate peint"
-            pp="src\assets\images\small-painting.jpg"
-            :followers="698"
-            :star1="true"
-            :star2="true"
-            :star3="true"
-            :star4="true"
-            :star5="true"
-            :heart="false"
-            name="Fabienni"
-            :renovation="false"
-            />
+            <a href="achat">
+                <Card class="mb-5"
+                image="src\assets\images\skate-yellow.png"
+                :distance="27"
+                state="Usé"
+                brand="Supreme"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                :price="40"
+                title="Skate peint"
+                pp="src\assets\images\small-painting.jpg"
+                :followers="698"
+                :star1="true"
+                :star2="true"
+                :star3="true"
+                :star4="true"
+                :star5="true"
+                :heart="false"
+                name="Fabienni"
+                :renovation="false"
+            /></a>
+            <a href="achat">
             <CardDon
             image="src\assets\images\skateorange.png"
             :distance="3"
@@ -149,11 +156,13 @@ import { RouterLink, RouterView } from 'vue-router'
             :star5="false"
             :heart="true"
             name="Marie484"/>
+            </a>
         </div>
 
         <h2 class="w-2/3 font-bold text-lg">Don populaires du jour</h2>
         <h3 class="text-sm font-thin mb-3 text-black">En fonction des articles les plus likés</h3>
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(384px,384px))] justify-between mb-24">
+            <a href="achat">
             <Card class="mb-5"
             image="src\assets\images\skate-yellow.png"
             :distance="27"
@@ -173,6 +182,8 @@ import { RouterLink, RouterView } from 'vue-router'
             name="Fabienni"
             :renovation="false"
             />
+            </a>
+            <a href="achat">
             <CardDon
             image="src\assets\images\skateorange.png"
             :distance="3"
@@ -190,6 +201,7 @@ import { RouterLink, RouterView } from 'vue-router'
             :star5="false"
             :heart="true"
             name="Marie484"/>
+            </a>
         </div>
     </div>
 </template>

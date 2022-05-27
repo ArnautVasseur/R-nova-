@@ -7,6 +7,7 @@
             </svg>
         </div>
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(384px,384px))] justify-between mb-5">
+            <a href="achat">
             <Card class="mb-5"
             image="src\assets\images\velo-wall-white.png"
             :distance="27"
@@ -26,6 +27,8 @@
             :heart="true"
             name="Russel766"
             />
+            </a>
+            <a href="achat">
             <CardDon class="mb-5"
             image="src\assets\images\skateorange.png"
             :distance="3"
@@ -43,7 +46,9 @@
             :star5="false"
             :heart="true"
             name="Marie484"/>
+            </a>
 
+            <a href="achat">
             <Card class="mb-5"
             image="src\assets\images\chair-table.png"
             :distance="15"
@@ -62,7 +67,9 @@
             :heart="true"
             name="Gertrude"
             />
+            </a>
 
+            <a href="achat">
             <Card class="mb-24"
             image="src\assets\images\plant.png"
             :distance="13"
@@ -80,6 +87,7 @@
             :heart="true"
             name="BanJafi"
             />
+            </a>
         </div>
     </div>
 </template>

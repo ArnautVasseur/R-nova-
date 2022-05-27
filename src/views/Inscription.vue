@@ -12,9 +12,11 @@
             class="bg-darker_gray w-full rounded-lg p-3 border-2 border-light_orange focus:border-2 hover:bg-gray"
             placeholder="Mot de passe">
         </div>
-        <OrangeButton class="m-auto block mb-10 hover:bg-dark_orange">
-            <slot>Inscription</slot>
-        </OrangeButton>
+        <a href="/">
+            <OrangeButton class="m-auto block mb-10 hover:bg-dark_orange">
+                <slot>Inscription</slot>
+            </OrangeButton>
+        </a>
         <p class="text-center mb-32 text-lg">Déjà inscrit ? <span class="font-bold underline">Connecte toi ici</span></p>
 
         <p class="text-sm text-center">

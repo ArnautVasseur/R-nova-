@@ -7,32 +7,38 @@
             </svg>
         </div>
         <div class="my-10 grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-between mb-24">
-            <Message class="mb-10"
-            name="Russel776"
-            message="Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua."
-            :notif="false"
-            :recent="false"
-            image="src\assets\images\balland.png"/>
+            <a href="conversation">
+                <Message class="mb-10"
+                name="Russel776"
+                message="Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua."
+                :notif="false"
+                :recent="false"
+                image="src\assets\images\balland.png"/>
+            </a>
 
-            <Message class="mb-10"
-            name="Russel776"
-            message="Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua."
-            :notif="true"
-            :recent="true"
-            image="src\assets\images\women-painting.jpg"/>
+            <a href="conversation">
+                <Message class="mb-10"
+                name="Russel776"
+                message="Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua."
+                :notif="true"
+                :recent="true"
+                image="src\assets\images\women-painting.jpg"/>
+            </a>
 
-            <Message class="mb-10"
-            name="Russel776"
-            message="Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua."
-            :notif="true"
-            :recent="true"
-            image="src\assets\images\balland.png"/>
+            <a href="conversation">
+                <Message class="mb-10"
+                name="Russel776"
+                message="Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua."
+                :notif="true"
+                :recent="true"
+                image="src\assets\images\balland.png"/>
+            </a>
         </div>
     </div>
 </template>
