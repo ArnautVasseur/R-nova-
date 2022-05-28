@@ -13,7 +13,7 @@ import Inscription from '../views/Inscription.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/',         name: 'home',  component: Homepage },
+    { path: '/homepage',         name: 'home',  component: Homepage },
     { path: '/favoris',  name: 'favoris',  component: Favoris },
     { path: '/user',  name: 'user',  component: User },
     { path: '/profil',  name: 'profil',  component: Profil },
@@ -21,9 +21,35 @@ const router = createRouter({
     { path: '/conversation',  name: 'conversation',  component: Conversation },
     { path: '/achat',  name: 'achat',  component: Achat },
     { path: '/ajout',  name: 'ajout',  component: Ajout },
-    { path: '/inscription',  name: 'inscription',  component: Inscription },
+    { path: '/',  name: 'inscription',  component: Inscription },
     { path: '/connexion',  name: 'connexion',  component: Connexion }
   ]
 })
 
 export default router
+
+function guard(to, from, next){
+  getAuth().onAuthStateChanged(function(user){
+    if(user){
+      console.log('router OK -> user ', user);
+      const firestore = getFirestore();
+      const dbUsers = collection(firestore, "users");
+      const q = query(dbUsers, where("iud", "==", user.iud));
+      onSnapshot(q, (snapshot) => {
+        let userInfo = snapshot.docs.map(doc =>({id:doc.id, ...doc.data()}));
+        let isAdmin=userInfo[0].admin;
+        if(isAdmin){
+          next(to.params.name);
+          return;
+        }else{
+          alert("Vous n'avez pas l'autorisation pour cette fonction");
+          next({name:"homepage"});
+          return;
+        }
+      })
+    }else {
+      console.log('router NOK => user ', user);
+      next({name:"homapage"});
+    }
+  });
+}

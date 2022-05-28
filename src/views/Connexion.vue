@@ -14,7 +14,7 @@
             id="password"
             name="password">
         </div>
-        <a href="/">
+        <a href="/homepage">
             <OrangeButton class="m-auto block mb-10 hover:bg-dark_orange">
                 <slot>Connexion</slot>
             </OrangeButton>
