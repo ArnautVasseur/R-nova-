@@ -9,6 +9,7 @@ import Achat from '../views/Achat.vue'
 import Ajout from '../views/Ajout.vue'
 import Connexion from '../views/Connexion.vue'
 import Inscription from '../views/Inscription.vue'
+import Admin from '../views/AdminPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,7 +23,11 @@ const router = createRouter({
     { path: '/achat',  name: 'achat',  component: Achat },
     { path: '/ajout',  name: 'ajout',  component: Ajout },
     { path: '/',  name: 'inscription',  component: Inscription },
-    { path: '/connexion',  name: 'connexion',  component: Connexion }
+    { path: '/connexion',  name: 'connexion',  component: Connexion },
+    { path: "/:catchAll(.*)", redirect: '/404',},
+    { path: '/404', name: 'PageNotExist', component: () => import('@/views/Page404.vue'),
+    },
+    { path: '/adminpage',  name: 'adminpage',  component: Admin, beforeEnter:guard }
   ]
 })
 
@@ -53,3 +58,4 @@ function guard(to, from, next){
     }
   });
 }
+
