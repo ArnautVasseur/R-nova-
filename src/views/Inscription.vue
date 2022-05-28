@@ -6,21 +6,15 @@
                         
                                 <div class="row">
                                     <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" >Email</span>
-                                        </div>
                                         <input 
-                                            class="form-control" placeholder="Adesse mail" type="email"
+                                            class="form-control w-full h-12 p-3 rounded-xl mb-5" placeholder="Adresse mail" type="email"
                                             v-model="user.email" required
                                             />                    
                                     </div>
 
                                     <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" >Mot de passe</span>
-                                        </div>
                                         <input 
-                                            class="form-control" placeholder="Mot de passe" 
+                                            class="form-control w-full h-12 p-3 rounded-xl" placeholder="Mot de passe" 
                                             :type="type" v-model="user.password" required
                                             />                    
                                             <div class="input-group-after">
@@ -37,12 +31,12 @@
                             </div>
 
                             <div class="card-footer">   
-                                <button type="submit" class="float-left btn btn-dark" >
-                                    Connexion
+                                <button type="submit" class="float-left border-2 border-black mb-3 p-2 rounded-xl" >
+                                     Test Connexion
                                 </button>
-                                <button type="button" class="float-right btn btn-dark"
+                                <button type="button" class="float-right border-2 border-black mb-3 p-2 rounded-xl"
                                     @click="onDcnx">
-                                    Deconnexion
+                                    Test Deconnexion
                                 </button>
                             </div>
                         </form>
