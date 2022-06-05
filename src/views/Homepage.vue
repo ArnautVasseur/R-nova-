@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <h2 class="font-bold text-lg">Pour toi</h2>
             <p class="text-orange">Voir d'autres objets</p>
         </div>
-        <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(384px,384px))] justify-between mb-5">
+        <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-around mb-5">
             <a href="achat">
                 <Card class="mb-5"
                 image="src\assets\images\velo-wall-white.png"
@@ -117,7 +117,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </a>
 
         <h2 class="w-2/3 font-bold text-lg mb-2">Articles dans la catégorie "Skate"</h2>
-        <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(384px,384px))] justify-between mb-10">
+        <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-around mb-10">
             <a href="achat">
                 <Card class="mb-5"
                 image="src\assets\images\skate-yellow.png"
@@ -161,7 +161,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
         <h2 class="w-2/3 font-bold text-lg">Don populaires du jour</h2>
         <h3 class="text-sm font-thin mb-3 text-black">En fonction des articles les plus likés</h3>
-        <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(384px,384px))] justify-between mb-24">
+        <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-around mb-24">
             <a href="achat">
             <Card class="mb-5"
             image="src\assets\images\skate-yellow.png"

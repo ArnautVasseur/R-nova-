@@ -111,9 +111,34 @@ incididunt ut labore et dolore magna aliqua."
                 </p>
             </div>
         </div>
-        <OrangeButton class="mb-24 block m-auto w-64">
+        <OrangeButton class="mb-5 block m-auto w-64">
             <slot>Enregistrer les modifications</slot>
         </OrangeButton>
+        <div class="mb-24">
+            <h2 class="text-center font-bold mb-5">Liste de souhaits</h2>
+                <div class="flex justify-center mb-3">
+                    <input type="text" class="border-2 p-1 mx-2 border-orange rounded-lg" v-model='nom' required/>
+                    <button type="button" @click='createSouhait()' title="Création">
+                        Create
+                    </button>
+                </div>
+                <div class="flex justify-center">
+                    <input type="text" v-model="filter" class="border-2 p-1 border-orange rounded-lg" placeholder="rechercher"/>
+                    <button type="button" title="Filtrage">
+                    </button>
+                </div> 
+            <form v-for="souhait in filterBySouhait" :key="souhait.id" class="flex justify-center">
+                <div>
+                    <input type="text" v-model='souhait.nom' required class="mt-2 border-2 border-orange rounded-lg p-1"/>
+                    <button type="button" class="mx-2 border-orange rounded-lg" @click="updateSouhait(souhait)" title="Modification">
+                    Modify
+                    </button>
+                    <button type="button" @click="deleteSouhait(souhait)" title="Suppression" class="border-orange rounded-lg p-1">
+                    Delete
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </template>
 
@@ -123,15 +148,96 @@ import Badges from "../components/Badges.vue";
 import Evaluations from "../components/Evaluations.vue";
 import OrangeButton from "../components/OrangeButton.vue";
 
-export default {
-    name: "",
-    components: {
-        User, Badges, Evaluations, OrangeButton
-    },
-    created() {
-        document.body.style.backgroundColor = "#FFFFFF";
-    },
-    };
+import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js'
+
+import { 
+    getFirestore, 
+    collection, 
+    doc, 
+    getDocs, 
+    addDoc, 
+    updateDoc, 
+    deleteDoc, 
+    onSnapshot } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+
+
+    export default {   
+        data(){
+            return{                
+                user:{         
+                    email:null,
+                    password:null
+                },
+                message:null, 
+                nom:null, 
+                listeSouhaitSynchro:[],
+                filter:''
+            }
+        },
+        name: "",
+        components: {
+            User, Badges, Evaluations, OrangeButton
+        },
+        created() {
+            document.body.style.backgroundColor = "#FFFFFF";
+        },
+          computed:{
+            orderBySouhait:function(){
+            return this.listeSouhaitSynchro.sort(function(a,b){
+                if(a.nom < b.nom) return -1;
+                if(a.nom > b.nom) return 1;
+                return 0;
+            });
+            },
+            filterBySouhait:function(){
+            if(this.filter.length > 0){
+                let filter = this.filter.toLowerCase();
+                return this.orderBySouhait.filter(function(souhait){
+                return souhait.nom.toLowerCase().includes(filter);
+                })
+            }else{
+                return this.orderBySouhait;
+            }
+            },
+        },
+
+        mounted(){
+            this.getSouhaitSynchro();
+        },
+
+        methods:{
+
+            async getSouhaitSynchro(){
+                const firestore = getFirestore();
+                const dbSouhait= collection(firestore, "souhait");
+                const query = await onSnapshot(dbSouhait, (snapshot) =>{
+                this.listeSouhaitSynchro = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()}));
+                })
+            },
+
+            async createSouhait(){
+                const firestore = getFirestore();
+                const dbSouhait= collection(firestore, "souhait");
+                const docRef = await addDoc(dbSouhait,{
+                    nom: this.nom
+                })
+             },
+
+            async updateSouhait(souhait){
+                const firestore = getFirestore();
+                const docRef = doc(firestore, "souhait", souhait.id);
+                await updateDoc(docRef, {
+                    nom: souhait.nom
+                }) 
+             },
+
+            async deleteSouhait(souhait){
+                const firestore = getFirestore();
+                const docRef = doc(firestore, "souhait", souhait.id);
+                await deleteDoc(docRef);
+             },
+        }
+    }
 </script>
 
 <style>

@@ -25,7 +25,7 @@ const router = createRouter({
     { path: '/',  name: 'inscription',  component: Inscription },
     { path: '/connexion',  name: 'connexion',  component: Connexion },
     { path: "/:catchAll(.*)", redirect: '/404',},
-    { path: '/404', name: 'PageNotExist', component: () => import('@/views/Page404.vue'),
+    { path: '/404', name: 'PageNotExist', component: () => import('../views/Page404.vue'),
     },
     { path: '/adminpage',  name: 'adminpage',  component: Admin, beforeEnter:guard }
   ]

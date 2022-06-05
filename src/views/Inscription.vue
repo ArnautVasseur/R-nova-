@@ -75,7 +75,7 @@ export default {
     },
     components: OrangeButton,
     components: { OrangeButton },
-    name:'MonCompte',
+    name:'',
     data() {
         return {
             user:{
