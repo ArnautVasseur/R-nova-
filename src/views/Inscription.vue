@@ -32,17 +32,17 @@
 
                             <div class="card-footer">   
                                 <button type="submit" class="float-left border-2 border-black mb-3 p-2 rounded-xl" >
-                                     Test Connexion
+                                    Connexion
                                 </button>
                                 <button type="button" class="float-right border-2 border-black mb-3 p-2 rounded-xl"
                                     @click="onDcnx">
-                                    Test Deconnexion
+                                    Deconnexion
                                 </button>
                             </div>
                         </form>
         <a href="/homepage">
             <OrangeButton class="m-auto block mb-10 hover:bg-dark_orange">
-                <slot>Inscription</slot>
+                <slot>Page d'accueil</slot>
             </OrangeButton>
         </a>
         <p class="text-center mb-32 text-lg">Déjà inscrit ? <a href="/connexion"><span class="font-bold underline">Connecte toi ici</span></a></p>
