@@ -19,7 +19,7 @@ import { RouterLink, RouterView } from 'vue-router'
           <img src="../public/icons/Heart.svg" alt="Heart">
         </RouterLink>
         <RouterLink to="/user">
-          <img src="../public/icons/user.svg" alt="User">
+          <img src="../public/icons/User.svg" alt="User">
         </RouterLink>
       </div>
     <RouterView/>
