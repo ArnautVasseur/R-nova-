@@ -1,51 +1,45 @@
 <template>
     <div class="mx-8">
-        <h1 class="text-center mt-40 font-bold text-3xl mb-10">Renova</h1>
-        <form @submit.prevent="onCnx">
-                            <div class="card-body">  
-                        
-                                <div class="row">
-                                    <div class="input-group mb-3">
-                                        <input 
-                                            class="form-control w-full h-12 p-3 rounded-xl mb-5" placeholder="Adresse mail" type="email"
-                                            v-model="user.email" required
-                                            />                    
-                                    </div>
+        <img src="/images/Logo.png" alt="Logo" class="w-36 h-32 mt-5 m-auto">
+        <h1 class="text-center font-bold text-3xl my-10">Renova</h1>
+        <form @submit.prevent="onCnx">  
+            <div class="input-group mb-3">
+                <input 
+                    class="form-control w-full h-12 p-3 rounded-xl mb-5" placeholder="Adresse mail" type="email"
+                    v-model="user.email" required
+                    />                    
+            </div>
 
-                                    <div class="input-group mb-3">
-                                        <input 
-                                            class="form-control w-full h-12 p-3 rounded-xl" placeholder="Mot de passe" 
-                                            :type="type" v-model="user.password" required
-                                            />                    
-                                            <div class="input-group-after">
-                                                <button class="btn btn-light" @click.prevent="affiche()">
-                                                    <i class="fa fa-eye fa-lg" ></i>
-                                                </button>
-                                            </div>
-                                    </div>
+            <div class="input-group mb-3">
+                <input 
+                    class="form-control w-full h-12 p-3 rounded-xl" placeholder="Mot de passe" 
+                    :type="type" v-model="user.password" required/>                    
+            <div class="input-group-after">
+                <button class="btn btn-light" @click.prevent="affiche()">
+                    <i class="fa fa-eye fa-lg" ></i>
+                </button>
+            </div>
+                    </div>
+                <div class="alert alert-warning" role="alert">
+                    {{message}}
+                </div>
 
-                                </div>
-                                <div class="alert alert-warning" role="alert">
-                                    {{message}}
-                                </div>
-                            </div>
-
-                            <div class="card-footer">   
-                                <button type="submit" class="float-left border-2 border-black mb-3 p-2 rounded-xl" >
-                                    Connexion
-                                </button>
-                                <button type="button" class="float-right border-2 border-black mb-3 p-2 rounded-xl"
-                                    @click="onDcnx">
-                                    Deconnexion
-                                </button>
-                            </div>
-                        </form>
+            <div class="card-footer">   
+                <button type="submit" class="float-left border-2 border-black mb-3 p-2 rounded-xl" >
+                    Connexion
+                </button>
+                <button type="button" class="float-right border-2 border-black mb-3 p-2 rounded-xl"
+                    @click="onDcnx">
+                    Deconnexion
+                </button>
+            </div>
+        </form>
         <a href="/homepage">
             <OrangeButton class="m-auto block mb-10 hover:bg-dark_orange">
                 <slot>Page d'accueil</slot>
             </OrangeButton>
         </a>
-        <p class="text-center mb-32 text-lg">Déjà inscrit ? <a href="/connexion"><span class="font-bold underline">Connecte toi ici</span></a></p>
+        <p class="text-center mb-32 text-lg">Déjà inscrit ? <a href="/connexion"><span class="font-semibold underline">Connecte-toi ici</span></a></p>
 
         <p class="text-sm text-center">
   <span
