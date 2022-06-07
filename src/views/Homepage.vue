@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-around mb-5">
             <a href="achat">
                 <Card class="mb-5"
-                image="public/images/velo-wall-white.png"
+                image="../../public/images/velo-wall-blue.png"
                 :distance="27"
                 state="Neuf"
                 brand="SuperVelo"
@@ -21,7 +21,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 :price="30"
                 :renovation="false"
                 title="Velo bleu"
-                pp="public\images\balland.png"
+                pp="../../public/images/balland.png"
                 :followers="419"
                 :star1="true"
                 :star2="true"
@@ -33,7 +33,7 @@ import { RouterLink, RouterView } from 'vue-router'
             </a>
             <a href="achat">
                 <Card
-                image="public/images/velo-wall-blue.png"
+                image="../../public/images/velo-wall-white.png"
                 :distance="15"
                 state="Rouillé"
                 brand="Bikes"
