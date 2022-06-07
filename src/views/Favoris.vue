@@ -9,7 +9,7 @@
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-between mb-5">
             <a href="achat">
             <Card class="mb-5"
-            image="src\assets\images\velo-wall-white.png"
+            image="/images/velo-wall-white.png"
             :distance="27"
             state="Neuf"
             brand="SuperVelo"
@@ -17,7 +17,7 @@
             :price="30"
             :renovation="false"
             title="Velo bleu"
-            pp="src\assets\images\balland.png"
+            pp="/images/balland.png"
             :followers="419"
             :star1="true"
             :star2="true"
@@ -30,14 +30,14 @@
             </a>
             <a href="achat">
             <CardDon class="mb-5"
-            image="src\assets\images\skateorange.png"
+            image="/images/skateorange.png"
             :distance="3"
             state="Neuf"
             brand="Santa cruz"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             :price="5"
             title="Skate"
-            pp="src\assets\images\women-painting.jpg"
+            pp="/images/women-painting.jpg"
             :followers="61"
             :star1="true"
             :star2="false"
@@ -50,14 +50,14 @@
 
             <a href="achat">
             <Card class="mb-5"
-            image="src\assets\images\chair-table.png"
+            image="/images/chair-table.png"
             :distance="15"
             state="Usé"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             :price="55"
             :renovation="false"
             title="Table de décoration"
-            pp="src\assets\images\women-paint.jpg"
+            pp="/images/women-paint.jpg"
             :followers="142"
             :star1="true"
             :star2="true"
@@ -71,13 +71,13 @@
 
             <a href="achat">
             <Card class="mb-24"
-            image="src\assets\images\plant.png"
+            image="/images/plant.png"
             :distance="13"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             :price="10"
             :renovation="true"
             title="Plante verte"
-            pp="src\assets\images\laptop.jpg"
+            pp="/images/laptop.jpg"
             :followers="26"
             :star1="true"
             :star2="true"

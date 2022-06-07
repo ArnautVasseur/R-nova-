@@ -21,7 +21,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 :price="30"
                 :renovation="false"
                 title="Velo bleu"
-                pp="../../public/images/balland.png"
+                pp="/images/balland.png"
                 :followers="419"
                 :star1="true"
                 :star2="true"
@@ -33,7 +33,7 @@ import { RouterLink, RouterView } from 'vue-router'
             </a>
             <a href="achat">
                 <Card
-                image="../../public/images/velo-wall-white.png"
+                image="/images/velo-wall-white.png"
                 :distance="15"
                 state="Rouillé"
                 brand="Bikes"
@@ -41,7 +41,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 :price="22"
                 :renovation="true"
                 title="Velo marron"
-                pp="public\images\balland.png"
+                pp="/images/balland.png"
                 :followers="142"
                 :star1="true"
                 :star2="true"
@@ -127,7 +127,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 :price="40"
                 title="Skate peint"
-                pp="public\images\small-painting.jpg"
+                pp="/images/small-painting.jpg"
                 :followers="698"
                 :star1="true"
                 :star2="true"
@@ -140,14 +140,14 @@ import { RouterLink, RouterView } from 'vue-router'
             /></a>
             <a href="achat">
             <CardDon
-            image="public\images\skateorange.png"
+            image="/images/skateorange.png"
             :distance="3"
             state="Neuf"
             brand="Santa cruz"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             :price="5"
             title="Skate"
-            pp="public\images\balland.png"
+            pp="/images/balland.png"
             :followers="61"
             :star1="true"
             :star2="false"
@@ -164,14 +164,14 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-around mb-24">
             <a href="achat">
             <Card class="mb-5"
-            image="public\images\skate-yellow.png"
+            image="/images/skate-yellow.png"
             :distance="27"
             state="Usé"
             brand="Supreme"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             :price="40"
             title="Skate peint"
-            pp="public\images\small-painting.jpg"
+            pp="/images/small-painting.jpg"
             :followers="698"
             :star1="true"
             :star2="true"
@@ -185,14 +185,14 @@ import { RouterLink, RouterView } from 'vue-router'
             </a>
             <a href="achat">
             <CardDon
-            image="public\images\skateorange.png"
+            image="/images/skateorange.png"
             :distance="3"
             state="Neuf"
             brand="Santa cruz"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             :price="5"
             title="Skate"
-            pp="public\images\balland.png"
+            pp="/images/balland.png"
             :followers="61"
             :star1="true"
             :star2="false"

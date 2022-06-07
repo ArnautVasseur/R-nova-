@@ -1,6 +1,6 @@
 <template>
     <div class="mx-8">
-        <h1 class="text-center mt-40 font-bold text-3xl mb-10">Renovae</h1>
+        <h1 class="text-center mt-40 font-bold text-3xl mb-10">Renova</h1>
         <div class="mx-5 mb-10">
             <input type="text" 
             class="bg-darker_gray w-full rounded-lg p-3 border-2 border-light_orange focus:border-2 hover:bg-gray"

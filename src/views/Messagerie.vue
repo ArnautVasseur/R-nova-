@@ -15,7 +15,7 @@
                         incididunt ut labore et dolore magna aliqua."
                 :notif="false"
                 :recent="false"
-                image="public\images\balland.png"/>
+                image="/images/balland.png"/>
             </a>
 
             <a href="conversation">
@@ -37,7 +37,7 @@
                         incididunt ut labore et dolore magna aliqua."
                 :notif="true"
                 :recent="true"
-                image="public\images\balland.png"/>
+                image="/images/balland.png"/>
             </a>
         </div>
     </div>
