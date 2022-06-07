@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img src="src\assets\images\velobleu.jpg" alt="velo bleu" class="w-full rounded-b-3xl">
+        <img src="../../public/images/velobleu.jpg" alt="velo bleu" class="w-full rounded-b-3xl">
         <div class="flex justify-between mx-8 mt-6">
             <div class="flex-col">
                 <h1 class="text-2xl font-bold">Velo bleu</h1>

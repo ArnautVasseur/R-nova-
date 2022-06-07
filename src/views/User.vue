@@ -56,7 +56,7 @@ incididunt ut labore et dolore magna aliqua."
                 style="box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);">
                 <div class="flex justify-around mb-2 items-center">
                     <img
-                    src="src\assets\images\velo-wall-white.png"
+                    src="public\images\velo-wall-white.png"
                     class="w-[54px] h-[53px] rounded-[7.62px] object-cover"/>
                     <p class="text-[15px] font-bold text-left text-black">Vélo bleu</p>
                     <p class="text-[15px] font-bold text-left text-[#eab270]">30€</p>
@@ -85,7 +85,7 @@ incididunt ut labore et dolore magna aliqua."
                 style="box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);">
                 <div class="flex justify-around mb-2 items-center">
                     <img
-                    src="src\assets\images\wall-bricks.png"
+                    src="public\images\wall-bricks.png"
                     class="w-[54px] h-[53px] rounded-[7.62px] object-cover"/>
                     <p class="text-[15px] font-bold text-left text-black">Vélo brun</p>
                     <p class="text-[15px] font-bold text-left text-[#eab270]">20€</p>

@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-around mb-5">
             <a href="achat">
                 <Card class="mb-5"
-                image="src\assets\images\velo-wall-white.png"
+                image="public\images\velo-wall-white.png"
                 :distance="27"
                 state="Neuf"
                 brand="SuperVelo"
@@ -21,7 +21,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 :price="30"
                 :renovation="false"
                 title="Velo bleu"
-                pp="src\assets\images\balland.png"
+                pp="public\images\balland.png"
                 :followers="419"
                 :star1="true"
                 :star2="true"
@@ -33,7 +33,7 @@ import { RouterLink, RouterView } from 'vue-router'
             </a>
             <a href="achat">
                 <Card
-                image="src\assets\images\velo-wall-blue.png"
+                image="public\images\velo-wall-blue.png"
                 :distance="15"
                 state="Rouillé"
                 brand="Bikes"
@@ -41,7 +41,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 :price="22"
                 :renovation="true"
                 title="Velo marron"
-                pp="src\assets\images\balland.png"
+                pp="public\images\balland.png"
                 :followers="142"
                 :star1="true"
                 :star2="true"
@@ -56,7 +56,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <a href="profil">
         <div class="mb-10 border-2 rounded-xl border-orange p-5 flex">
             <div class="flex flex-col mr-4">
-                <img src="../assets/images/balland.png" alt="Russel" class="w-16">
+                <img src="../../public/images/balland.png" alt="Russel" class="w-16">
                 <div class="flex ml-3 mt-1 pb-3 -mb-1">
                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                     <path
@@ -120,14 +120,14 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-around mb-10">
             <a href="achat">
                 <Card class="mb-5"
-                image="src\assets\images\skate-yellow.png"
+                image="public\images\skate-yellow.png"
                 :distance="27"
                 state="Usé"
                 brand="Supreme"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 :price="40"
                 title="Skate peint"
-                pp="src\assets\images\small-painting.jpg"
+                pp="public\images\small-painting.jpg"
                 :followers="698"
                 :star1="true"
                 :star2="true"
@@ -140,14 +140,14 @@ import { RouterLink, RouterView } from 'vue-router'
             /></a>
             <a href="achat">
             <CardDon
-            image="src\assets\images\skateorange.png"
+            image="public\images\skateorange.png"
             :distance="3"
             state="Neuf"
             brand="Santa cruz"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             :price="5"
             title="Skate"
-            pp="src\assets\images\balland.png"
+            pp="public\images\balland.png"
             :followers="61"
             :star1="true"
             :star2="false"
@@ -164,14 +164,14 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-around mb-24">
             <a href="achat">
             <Card class="mb-5"
-            image="src\assets\images\skate-yellow.png"
+            image="public\images\skate-yellow.png"
             :distance="27"
             state="Usé"
             brand="Supreme"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             :price="40"
             title="Skate peint"
-            pp="src\assets\images\small-painting.jpg"
+            pp="public\images\small-painting.jpg"
             :followers="698"
             :star1="true"
             :star2="true"
@@ -185,14 +185,14 @@ import { RouterLink, RouterView } from 'vue-router'
             </a>
             <a href="achat">
             <CardDon
-            image="src\assets\images\skateorange.png"
+            image="public\images\skateorange.png"
             :distance="3"
             state="Neuf"
             brand="Santa cruz"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             :price="5"
             title="Skate"
-            pp="src\assets\images\balland.png"
+            pp="public\images\balland.png"
             :followers="61"
             :star1="true"
             :star2="false"
