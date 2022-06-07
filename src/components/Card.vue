@@ -86,7 +86,7 @@
                 </p>
 
                 <p class="flex-grow-0 flex-shrink-0 text-[11.67735767364502px] text-left text-orange" :class="{'text-white':renovation}">
-                    ou renovation
+                    ou rénovation
                 </p>
             </div>
 

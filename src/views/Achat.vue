@@ -81,7 +81,7 @@
         <div class="mb-5 mx-5">
             <textarea name="desciption" 
             class="bg-dark_gray w-full p-3 rounded-lg" rows="8"
-            placeholder="ex : Vélo en bon été, déjà utilisé..."></textarea>
+            placeholder="ex : Vélo en bon état, déjà utilisé..."></textarea>
         </div>
         <SendButton class="mb-24 ml-7"/>
     </div>

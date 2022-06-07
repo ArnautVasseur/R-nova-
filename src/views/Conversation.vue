@@ -10,7 +10,7 @@
             <div class="mb-3">
                 <div class="flex justify-between items-center mb-4">
                     <h2 class="font-semibold">Sélectionner un utilisateur</h2>
-                    <select class="border-2 rounded-lg p-1" v-model="userSelected" @change="selectUser">
+                    <select class="border-2 border-orange bg-orange text-white shadow-xl p-2 rounded-xl" v-model="userSelected" @change="selectUser">
                     <option selected disabled value="">_</option>
                     <option
                         v-for="util in listeUsers" :key="util.uid"
@@ -26,8 +26,8 @@
                 <form class="mb-4" @submit.prevent="createDisc()">
                         <h2 class="mb-3 font-semibold">Nouveau fil avec {{userSelected.login}}</h2>
                         <div class="flex justify-around items-center">
-                        <input type="text" class="p-2" v-model="libelle" required />
-                        <button class="rounded-lg border-2 p-2" type="submit" title="Création">
+                        <input type="text" class="p-2 border-[1px] rounded-lg" v-model="libelle" required />
+                        <button class="border-2 border-orange bg-orange text-white shadow-xl p-2 rounded-xl" type="submit" title="Création">
                             Create
                         </button>
                         </div>
@@ -37,16 +37,16 @@
 
                 <h5 class="my-3 font-semibold">Vos fils de discussion avec : {{userSelected.login}}</h5>
                 <div v-if="chat.length > 0"> 
-                    <div v-for="disc in chat" :key="disc.uid" class="border-2 p-2 text-center">
+                    <div v-for="disc in chat" :key="disc.uid" class="border-2 p-2 rounded-lg text-center">
                         {{disc.libelle}} - créer par 
                         <span v-if="disc.fil[0] == user.uid">vous</span>
                         <span v-else>{{userSelected.login}}</span>
                         le  {{dateFr(disc.creation)}}
                         <div class="flex justify-center my-4">
-                            <button class="mr-3 rounded-lg border-2 p-2" type="button" @click="viewFil(disc)" title="Voir ce fil">
+                            <button class="mr-3 border-2 border-orange bg-orange text-white shadow-xl p-2 rounded-xl" type="button" @click="viewFil(disc)" title="Voir ce fil">
                                 Voir
                             </button>
-                            <button class="rounded-lg border-2 p-2" type="button" @click="deleteFil(disc)" title="Supprimer ce fil">
+                            <button class="border-2 border-orange bg-orange text-white shadow-xl p-2 rounded-xl" type="button" @click="deleteFil(disc)" title="Supprimer ce fil">
                                 Supprimer
                             </button>
                         </div>
@@ -61,19 +61,19 @@
                     <h5 class="my-5">Discussion : {{discussion.libelle}}</h5>
                     <hr/>
                     <div class="my-3 flex flex-col justify-between items-end">
-                        <textarea class="p-2 w-full mb-2" rows="2"
+                        <textarea class="p-2 w-full mb-2 border-[1px] rounded-lg" rows="2"
                             placeholder="Message" 
                             v-model="message"
                         ></textarea>
-                        <button class="border-2 rounded-lg p-2" @click="sendMsg()">
+                        <button class="border-2 border-orange bg-orange text-white shadow-xl p-2 rounded-xl" @click="sendMsg()">
                             Envoyer
                         </button>
                     </div>
                     <div v-for="disc in chat" :key="disc.id">
                         <div v-if="disc.id == discussion.id"> 
-                            <div class="border-2 p-2 my-3" v-for="msg in sortMsgByDate(disc.msg)" :key="msg.date">
+                            <div class="border-2 my-3 rounded-lg text-white" v-for="msg in sortMsgByDate(disc.msg)" :key="msg.date">
                                 
-                                <div class="mb-3" v-if="msg.by == user.uid">
+                                <div class="bg-green p-3 rounded-lg" v-if="msg.by == user.uid">
                                         <div class="flex justify-start item-center">
                                             <img class="avatar w-10 h-10 rounded-full mr-3" :src="userInfo[0].avatar" />
                                             {{userInfo[0].login}}  - {{dateFr(msg.date)}}
@@ -83,7 +83,7 @@
                                     </div>
                                 </div>
 
-                                <div class="mb-3" v-if="msg.by == userSelected.uid">
+                                <div class="bg-orange p-3 rounded-lg" v-if="msg.by == userSelected.uid">
                                     <div class="">
                                         <div class="flex justify-start item-center">
                                             <img  class="w-10 h-10 rounded-full mr-3" :src="userSelected.avatar"/>

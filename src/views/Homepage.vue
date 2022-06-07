@@ -20,7 +20,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 :price="30"
                 :renovation="false"
-                title="Velo bleu"
+                title="Vélo bleu"
                 pp="/images/balland.png"
                 :followers="419"
                 :star1="true"
@@ -159,7 +159,7 @@ import { RouterLink, RouterView } from 'vue-router'
             </a>
         </div>
 
-        <h2 class="w-2/3 font-bold text-lg">Don populaires du jour</h2>
+        <h2 class="w-2/3 font-bold text-lg">Dons populaires du jour</h2>
         <h3 class="text-sm font-thin mb-3 text-black">En fonction des articles les plus likés</h3>
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-around mb-24">
             <a href="achat">

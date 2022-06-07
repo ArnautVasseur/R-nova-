@@ -27,6 +27,7 @@ module.exports = {
       "darker_gray":"#E6E6E6",
       "light_orange":"#F3DABC",
       "dark_orange":"#E3963A",
+      "green":"rgb(22 100 74)"
      },
     extend: {},
   },

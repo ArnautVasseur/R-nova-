@@ -1,7 +1,7 @@
 <template>
 <div>
     <p class="text-xs text-right text-orange mr-9 mb-3" :class="{'opacity-0':recent}"
-    >Nouveau message</p>
+    >Nouveaux messages</p>
     <div
     class="w-80 h-20 rounded-3xl bg-dark_gray m-auto flex overflow-auto"
     style="box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);"

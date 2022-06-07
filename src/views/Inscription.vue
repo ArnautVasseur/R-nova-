@@ -25,10 +25,10 @@
                 </div>
 
             <div class="card-footer">   
-                <button type="submit" class="float-left border-2 border-black mb-3 p-2 rounded-xl" >
+                <button type="submit" class="float-left border-2 border-orange bg-orange text-white shadow-xl mb-5 p-2 rounded-xl" >
                     Connexion
                 </button>
-                <button type="button" class="float-right border-2 border-black mb-3 p-2 rounded-xl"
+                <button type="button" class="float-right border-2 border-orange bg-orange text-white shadow-xl mb-5 p-2 rounded-xl"
                     @click="onDcnx">
                     Deconnexion
                 </button>
@@ -43,10 +43,10 @@
 
         <p class="text-sm text-center">
   <span
-    >En t’inscrivant sur Rénovae, tu acceptes le </span
+    >En t’inscrivant sur Rénova, tu acceptes le </span
   ><span class="font-bold underline">Contrat d’utilisation</span
   ><span> de </span><span
-    >Rénovae ainsi que sa </span
+    >Rénova ainsi que sa </span
   ><span class="font-bold underline">Politique privée</span>
 </p>
     </div>
