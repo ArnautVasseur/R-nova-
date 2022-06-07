@@ -1,7 +1,7 @@
 <template>
     <div class="h-screen w-screen bg-gray-100 flex items-center">
         <div class="container flex flex-col md:flex-row items-center justify-center px-5 text-gray-700">
-            <img src="public\images\404.png" alt="404" class="-mt-44">
+            <img src="../../public/images/404.png" alt="404" class="-mt-44">
 
             <div class="max-w-md">
                 <div class="text-5xl font-dark font-bold">404</div>
