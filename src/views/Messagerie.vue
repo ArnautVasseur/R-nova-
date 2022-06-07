@@ -26,7 +26,7 @@
                         incididunt ut labore et dolore magna aliqua."
                 :notif="true"
                 :recent="true"
-                image="src\assets\images\women-painting.jpg"/>
+                image="/images/women-painting.jpg"/>
             </a>
 
             <a href="conversation">

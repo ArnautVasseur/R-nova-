@@ -120,7 +120,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(320px,320px))] justify-around mb-10">
             <a href="achat">
                 <Card class="mb-5"
-                image="public\images\skate-yellow.png"
+                image="/images/skate-yellow.png"
                 :distance="27"
                 state="Usé"
                 brand="Supreme"

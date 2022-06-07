@@ -14,7 +14,7 @@
 adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua."
         :followers="5900549"
-        image="src\assets\images\Fantasio.jpg"/>
+        image="/images/Fantasio.jpg"/>
 
         <Badges
         icones1="src\components\icons\badgeicon.svg"

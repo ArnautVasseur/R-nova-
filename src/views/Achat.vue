@@ -3,7 +3,7 @@
         <img src="../../public/images/velobleu.jpg" alt="velo bleu" class="w-full rounded-b-3xl">
         <div class="flex justify-between mx-8 mt-6">
             <div class="flex-col">
-                <h1 class="text-2xl font-bold">Velo bleu</h1>
+                <h1 class="text-2xl font-bold">Vélo bleu</h1>
                 <div class="flex ml-5 mt-1 pb-3">
                 <svg width="10" height="10" viewBox="0 0 7 7" fill="orange" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                     <path
