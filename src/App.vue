@@ -7,19 +7,19 @@ import { RouterLink, RouterView } from 'vue-router'
       <div class="flex overflow-hidden fixed bottom-0 w-full justify-around items-center py-4 bg-gray"
       v-if="!['inscription', 'connexion'].includes($route.name)">
         <RouterLink to="/homepage">
-          <img src="../public/icons/Home.svg" alt="Home">
+          <img src="/icons/Home.svg" alt="Home">
         </RouterLink>
         <RouterLink to="/messagerie">
-          <img src="../public/icons/Mail.svg" alt="Messagerie">
+          <img src="/icons/Mail.svg" alt="Messagerie">
         </RouterLink>
         <RouterLink to="/ajout">
-          <img src="../public/icons/Plus.svg" alt="Plus">
+          <img src="/icons/Plus.svg" alt="Plus">
         </RouterLink>
         <RouterLink to="/favoris">
-          <img src="../public/icons/Heart.svg" alt="Heart">
+          <img src="/icons/Heart.svg" alt="Heart">
         </RouterLink>
         <RouterLink to="/user">
-          <img src="../public/icons/User.svg" alt="User">
+          <img src="/icons/User.svg" alt="User">
         </RouterLink>
       </div>
     <RouterView/>
