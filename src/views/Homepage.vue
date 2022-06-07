@@ -33,7 +33,7 @@ import { RouterLink, RouterView } from 'vue-router'
             </a>
             <a href="achat">
                 <Card
-                image="public\images\velo-wall-blue.png"
+                image="public/images/velo-wall-blue.png"
                 :distance="15"
                 state="Rouillé"
                 brand="Bikes"
