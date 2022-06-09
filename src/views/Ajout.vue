@@ -33,13 +33,17 @@
 
         <hr class="bg-orange mb-10 h-[2px] border-none mx-10"/>
 
-        <div class="flex justify-around">
+        <div class="flex justify-around items-start">
             <h3 class="font-bold mb-10 text-sm">Souhaites-tu rénover ton article ?</h3>
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.50172 10.4425C7.19384 10.1654 6.71962 10.1904 6.44253 10.4983C6.16544 10.8062 6.19039 11.2804 6.49828 11.5575L7.50172 10.4425ZM9.53468 13.2812L10.0364 12.7237L9.53468 13.2812ZM10.993 13.1519L11.585 13.6123L10.993 13.1519ZM15.592 8.46046C15.8463 8.13349 15.7874 7.66229 15.4605 7.40799C15.1335 7.15368 14.6623 7.21258 14.408 7.53954L15.592 8.46046ZM17 0.25H5V1.75H17V0.25ZM0.25 5V17H1.75V5H0.25ZM5 21.75H17V20.25H5V21.75ZM21.75 17V5H20.25V17H21.75ZM17 21.75C19.6234 21.75 21.75 19.6234 21.75 17H20.25C20.25 18.7949 18.7949 20.25 17 20.25V21.75ZM0.25 17C0.25 19.6234 2.37665 21.75 5 21.75V20.25C3.20507 20.25 1.75 18.7949 1.75 17H0.25ZM5 0.25C2.37665 0.25 0.25 2.37665 0.25 5H1.75C1.75 3.20507 3.20507 1.75 5 1.75V0.25ZM17 1.75C18.7949 1.75 20.25 3.20507 20.25 5H21.75C21.75 2.37665 19.6234 0.25 17 0.25V1.75ZM6.49828 11.5575L9.03296 13.8387L10.0364 12.7237L7.50172 10.4425L6.49828 11.5575ZM11.585 13.6123L15.592 8.46046L14.408 7.53954L10.401 12.6914L11.585 13.6123ZM9.03296 13.8387C9.78809 14.5183 10.9613 14.4142 11.585 13.6123L10.401 12.6914C10.3119 12.806 10.1443 12.8208 10.0364 12.7237L9.03296 13.8387Z" fill="#1E2124"/>
-            </svg>
+            <input type="checkbox" id="renovation" name="renovation" class="scale-150 mt-2 accent-orange bg-white" @click="renover = !renover">
         </div>
-        <PostingArticle class="block m-auto mb-32"/>
+        <div v-if="renover" class="mb-10">
+            <h2 class="font-bold mb-3">Description de la rénovation</h2>
+            <textarea name="renovation"
+            class="bg-dark_gray w-full p-3 rounded-lg" rows="8"
+            placeholder="ex : J'aimerai repeindre mon vélo en rouge..."></textarea>
+        </div>
+            <PostingArticle class="block m-auto mb-24"/>
         </div>
 </template>
 
@@ -49,6 +53,11 @@ import PostingArticle from "../components/PostingArticle.vue";
 
 export default {
         name: "",
+        data(){
+            return{
+                renover:false
+            }
+        },
         components: {
             AddArticle, PostingArticle
         },
