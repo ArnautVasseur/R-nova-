@@ -17,14 +17,14 @@ incididunt ut labore et dolore magna aliqua."
         image="/images/Fantasio.jpg"/>
 
         <Badges
-        icones1="src\components\icons\badgeicon.svg"
-        icones2="src\components\icons\orangeheart.svg"
+        icones1="/icons/badgeicon.svg"
+        icones2="/icons/orangeheart.svg"
         texte1="Créateur de communauté"
         texte2="Vendeur apprécié"/>
 
         <Evaluations class="mb-3"
-        imageprofil1="src\assets\images\albert-dera-ILip77SbmOE-unsplash 2.jpg"
-        imageprofil2="src\assets\images\ulysse-pointcheval-frI3NV2Qgmo-unsplash 2.jpg"
+        imageprofil1="/images/albert-dera-ILip77SbmOE-unsplash 2.jpg"
+        imageprofil2="/images/ulysse-pointcheval-frI3NV2Qgmo-unsplash 2.jpg"
         description1="Lorem ipsum dolor sit amet, consectetur 
 adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua."
