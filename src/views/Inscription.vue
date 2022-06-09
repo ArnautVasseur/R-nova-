@@ -2,29 +2,22 @@
     <div class="mx-8">
         <img src="/images/Logo.png" alt="Logo" class="w-36 h-32 mt-5 m-auto">
         <h1 class="text-center font-bold text-3xl my-10">Renova</h1>
-        <form @submit.prevent="onCnx">  
-            <div class="input-group mb-3">
+        <form @submit.prevent="onCnx">
                 <input 
-                    class="form-control w-full h-12 p-3 rounded-xl mb-5" placeholder="Adresse mail" type="email"
+                    class="w-full h-12 p-3 rounded-xl mb-5 shadow-xl" placeholder="Adresse mail" type="email"
                     v-model="user.email" required
-                    />                    
-            </div>
-
-            <div class="input-group mb-3">
-                <input 
-                    class="form-control w-full h-12 p-3 rounded-xl" placeholder="Mot de passe" 
-                    :type="type" v-model="user.password" required/>                    
-            <div class="input-group-after">
-                <button class="btn btn-light" @click.prevent="affiche()">
-                    <i class="fa fa-eye fa-lg" ></i>
-                </button>
-            </div>
-                    </div>
+                    />
+                <div class="flex justify-between mb-8 shadow-xl">
+                    <input 
+                        class="w-full h-12 p-3 rounded-l-xl" placeholder="Mot de passe" 
+                        :type="type" v-model="user.password" required/>
+                    <button class="p-2 rounded-r-xl bg-orange text-white" @click.prevent="affiche()">
+                        Afficher
+                    </button>
+                </div>
                 <div class="alert alert-warning" role="alert">
                     {{message}}
                 </div>
-
-            <div class="card-footer">   
                 <button type="submit" class="float-left border-2 border-orange bg-orange text-white shadow-xl mb-5 p-2 rounded-xl" >
                     Connexion
                 </button>
@@ -32,7 +25,6 @@
                     @click="onDcnx">
                     Deconnexion
                 </button>
-            </div>
         </form>
         <a href="/homepage">
             <OrangeButton class="m-auto block mb-10 hover:bg-dark_orange">
