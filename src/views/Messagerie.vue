@@ -11,8 +11,7 @@
                 <Message class="mb-10 px-5"
                 name="Russel776"
                 message="Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua."
+                        adipiscing elit."
                 :notif="false"
                 :recent="false"
                 image="/images/balland.png"/>
@@ -22,8 +21,7 @@
                 <Message class="mb-10 px-5"
                 name="Russel776"
                 message="Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua."
+                        adipiscing elit."
                 :notif="true"
                 :recent="true"
                 image="/images/women-painting.jpg"/>
@@ -33,8 +31,7 @@
                 <Message class="mb-10 px-5"
                 name="Russel776"
                 message="Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua."
+                        adipiscing elit."
                 :notif="true"
                 :recent="true"
                 image="/images/balland.png"/>
