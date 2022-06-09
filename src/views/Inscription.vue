@@ -3,44 +3,48 @@
         <img src="/images/Logo.png" alt="Logo" class="w-36 h-32 mt-5 m-auto">
         <h1 class="text-center font-bold text-3xl my-10">Renova</h1>
         <form @submit.prevent="onCnx">
-                <input 
-                    class="w-full h-12 p-3 rounded-xl mb-5 shadow-xl" placeholder="Adresse mail" type="email"
-                    v-model="user.email" required
-                    />
-                <div class="flex justify-between mb-8 shadow-xl">
-                    <input 
-                        class="w-full h-12 p-3 rounded-l-xl" placeholder="Mot de passe" 
-                        :type="type" v-model="user.password" required/>
-                    <button class="p-2 rounded-r-xl bg-orange text-white" @click.prevent="affiche()">
-                        Afficher
-                    </button>
+            <div class="lg:flex lg:items-center lg:justify-center">
+                <div>
+                    <div class="sm:mx-16">
+                        <input 
+                            class="w-full h-12 p-3 rounded-xl mb-5 shadow-xl lg:w-96" placeholder="Adresse mail" type="email"
+                            v-model="user.email" required
+                            />
+                    </div>
+                    <div class="flex justify-between mb-8 shadow-xl sm:mx-16 lg:w-96">
+                        <input 
+                            class="w-full h-12 p-3 rounded-l-xl" placeholder="Mot de passe" 
+                            :type="type" v-model="user.password" required/>
+                        <button class="p-2 rounded-r-xl bg-orange text-white" @click.prevent="affiche()">
+                            Afficher
+                        </button>
+                    </div>
                 </div>
+            
                 <div class="alert alert-warning" role="alert">
                     {{message}}
                 </div>
-                <button type="submit" class="float-left border-2 border-orange bg-orange text-white shadow-xl mb-5 p-2 rounded-xl" >
-                    Connexion
-                </button>
-                <button type="button" class="float-right border-2 border-orange bg-orange text-white shadow-xl mb-5 p-2 rounded-xl"
-                    @click="onDcnx">
-                    Deconnexion
-                </button>
+                <div class="flex justify-around mb-5 h-12">
+                    <button type="submit" class="lg:mx-5 border-2 border-orange bg-orange text-white shadow-xl p-2 rounded-xl" >
+                        Connexion
+                    </button>
+                    <button type="button" class="lg:mx-5 border-2 border-orange bg-orange text-white shadow-xl p-2 rounded-xl"
+                        @click="onDcnx">
+                        Deconnexion
+                    </button>
+                </div>
+            </div>
         </form>
         <a href="/homepage">
             <OrangeButton class="m-auto block mb-10 hover:bg-dark_orange">
                 <slot>Page d'accueil</slot>
             </OrangeButton>
         </a>
-        <p class="text-center mb-32 text-lg">Déjà inscrit ? <a href="/connexion"><span class="font-semibold underline">Connecte-toi ici</span></a></p>
+        <p class="text-center mb-32 text-lg lg:mb-10">Déjà inscrit ? <a href="/connexion"><span class="font-semibold underline">Connecte-toi ici</span></a></p>
 
         <p class="text-sm text-center">
-  <span
-    >En t’inscrivant sur Rénova, tu acceptes le </span
-  ><span class="font-bold underline">Contrat d’utilisation</span
-  ><span> de </span><span
-    >Rénova ainsi que sa </span
-  ><span class="font-bold underline">Politique privée</span>
-</p>
+            <span>En t’inscrivant sur Rénova, tu acceptes le </span><span class="font-bold underline">Contrat d’utilisation</span><span> de </span><span>Rénova ainsi que sa </span><span class="font-bold underline">Politique privée</span>
+        </p>
     </div>
 </template>
 
