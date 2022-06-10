@@ -1,5 +1,6 @@
 <template>
     <div class="mx-7">
+        <div>
         <div class="flex my-10 items-center ml-3">
             <h1 class="text-center font-bold text-2xl mr-3">Favoris</h1>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,6 +90,7 @@
             />
             </a>
         </div>
+    </div>
     </div>
 </template>
 

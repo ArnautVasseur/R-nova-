@@ -3,7 +3,7 @@
     <div class="shadow-inherit bg-[#c4c4c4] h-7 rounded-[10px]">
       <input
         type="text"
-        placeholder="Lorem Ipsum"
+        placeholder="Recherche"
         class="
           font-light
           text-left
