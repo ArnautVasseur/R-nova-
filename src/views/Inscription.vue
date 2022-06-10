@@ -25,10 +25,10 @@
                     {{message}}
                 </div>
                 <div class="flex justify-around mb-5 h-12">
-                    <button type="submit" class="lg:mx-5 border-2 border-orange bg-orange text-white shadow-xl p-2 rounded-xl" >
+                    <button type="submit" class="lg:mx-5 border-2 border-orange hover:bg-dark_orange bg-orange text-white shadow-xl p-2 rounded-xl" >
                         Connexion
                     </button>
-                    <button type="button" class="lg:mx-5 border-2 border-orange bg-orange text-white shadow-xl p-2 rounded-xl"
+                    <button type="button" class="lg:mx-5 border-2 border-orange hover:bg-dark_orange bg-orange text-white shadow-xl p-2 rounded-xl"
                         @click="onDcnx">
                         Deconnexion
                     </button>

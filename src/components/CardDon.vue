@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-auto border-2 w-80 h-60 rounded-2xl bg-white border-orange grid grid-cols-5">
+    <div class="overflow-auto border-2 hover:border-4 w-80 h-60 rounded-2xl bg-white border-orange grid grid-cols-5">
         <div class="col-span-2">
             <img :src="image" class="w-28 h-32 object-cover rounded-2xl m-auto mt-4 ml-3" />
 

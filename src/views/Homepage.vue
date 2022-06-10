@@ -54,7 +54,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>
         <h2 class="w-2/3 font-bold text-lg mb-3">Profils qui pourrait vous intéresser</h2>
         <a href="profil">
-        <div class="mb-10 border-2 rounded-xl border-orange p-5 flex">
+        <div class="mb-10 border-2 rounded-xl border-orange hover:border-4 p-5 flex">
             <div class="flex flex-col mr-4">
                 <img src="../../public/images/balland.png" alt="Russel" class="w-16">
                 <div class="flex ml-3 mt-1 pb-3 -mb-1">

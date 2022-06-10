@@ -1,7 +1,7 @@
 <template>
     <div>
         <User class="mt-8 mb-3"
-        Name="Fantasio974"
+        Name="Russel766"
         ancienneté=" 3 ans"
         location="Compiègne"
         :star1="true"
@@ -13,8 +13,8 @@
         description="Lorem ipsum dolor sit amet, consectetur 
 adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua."
-        :followers="5900549"
-        image="/images/Fantasio.jpg"/>
+        :followers="5909"
+        image="/images/balland.png"/>
 
         <Badges
         icones1="/icons/badgeicon.svg"
@@ -117,24 +117,24 @@ incididunt ut labore et dolore magna aliqua."
         <div class="mb-24">
             <h2 class="text-center font-bold mb-5">Liste de souhaits</h2>
                 <div class="flex justify-center mb-3">
-                    <input type="text" class="border-2 p-1 mx-2 border-orange rounded-lg" v-model='nom' required/>
-                    <button type="button" @click='createSouhait()' title="Création">
-                        Create
+                    <input type="text" class="border-2 p-1 mx-2 border-orange hover:border-4 rounded-lg" v-model='nom' required/>
+                    <button type="button" @click='createSouhait()' title="Création" class="border-2 p-1 border-orange rounded-lg hover:border-4">
+                        Créer
                     </button>
                 </div>
                 <div class="flex justify-center">
-                    <input type="text" v-model="filter" class="border-2 p-1 border-orange rounded-lg" placeholder="rechercher"/>
+                    <input type="text" v-model="filter" class="border-2 p-1 hover:border-4 border-orange rounded-lg" placeholder="rechercher"/>
                     <button type="button" title="Filtrage">
                     </button>
                 </div> 
             <form v-for="souhait in filterBySouhait" :key="souhait.id" class="flex justify-center">
                 <div>
-                    <input type="text" v-model='souhait.nom' required class="mt-2 border-2 border-orange rounded-lg p-1"/>
-                    <button type="button" class="mx-2 border-orange rounded-lg" @click="updateSouhait(souhait)" title="Modification">
-                    Modify
+                    <input type="text" v-model='souhait.nom' required class="mt-2 border-2 hover:border-4 border-orange rounded-lg p-1"/>
+                    <button type="button" class="mx-2 border-orange rounded-lg border-2 p-1 hover:border-4" @click="updateSouhait(souhait)" title="Modification">
+                    Modifier
                     </button>
-                    <button type="button" @click="deleteSouhait(souhait)" title="Suppression" class="border-orange rounded-lg p-1">
-                    Delete
+                    <button type="button" @click="deleteSouhait(souhait)" title="Suppression" class="border-2 p-1 border-orange rounded-lg hover:border-4">
+                    Supprimer
                     </button>
                 </div>
             </form>
