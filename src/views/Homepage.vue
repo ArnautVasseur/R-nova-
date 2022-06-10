@@ -17,7 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 :distance="27"
                 state="Neuf"
                 brand="SuperVelo"
-                description="Vélo bleu neuf acheter il y a quelques mois."
+                description="Vélo bleu neuf acheté il y a quelques mois."
                 :price="30"
                 :renovation="false"
                 title="Vélo bleu"

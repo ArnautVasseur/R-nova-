@@ -69,7 +69,7 @@
                     </svg>
                 </div>
                 <p class="text-xs text-left text-black">
-                    Vélo bleu neuf acheter il y a quelques mois
+                    Vélo bleu neuf acheté il y a quelques mois.
                 </p>
             </div>
 

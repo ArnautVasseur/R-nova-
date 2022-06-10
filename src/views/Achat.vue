@@ -73,9 +73,7 @@
             </div>
         </div>
         <h2 class="ml-7 text-[#A7A7A7] font-bold mb-3">Description</h2>
-        <p class="mx-7 mb-8">Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua.</p>
+        <p class="mx-7 mb-8">Vélo bleu acheté il y a quelques mois.</p>
 
         <h2 class="ml-7 text-[#A7A7A7] font-bold mb-3">Message</h2>
         <div class="mb-5 mx-5">
