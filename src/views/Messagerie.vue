@@ -10,8 +10,7 @@
             <a href="conversation">
                 <Message class="mb-10 px-5"
                 name="Russel776"
-                message="Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit."
+                message="Bonjour ! ça tient toujours pour le vélo je vous l’envoie demain matin."
                 :notif="false"
                 :recent="false"
                 image="/images/balland.png"/>
@@ -20,8 +19,7 @@
             <a href="conversation">
                 <Message class="mb-10 px-5"
                 name="Russel776"
-                message="Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit."
+                message="Toujours intéressé ?."
                 :notif="true"
                 :recent="true"
                 image="/images/women-painting.jpg"/>
@@ -30,8 +28,7 @@
             <a href="conversation">
                 <Message class="mb-10 px-5"
                 name="Russel776"
-                message="Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit."
+                message="Salut ! Je viens de voir tes dernières créations j’aime beaucoup !."
                 :notif="true"
                 :recent="true"
                 image="/images/balland.png"/>

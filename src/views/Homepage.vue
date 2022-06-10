@@ -17,7 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 :distance="27"
                 state="Neuf"
                 brand="SuperVelo"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                description="Vélo bleu neuf acheter il y a quelques mois."
                 :price="30"
                 :renovation="false"
                 title="Vélo bleu"
@@ -37,7 +37,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 :distance="15"
                 state="Rouillé"
                 brand="Bikes"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                description="Vieux vélo inutilisable rouillé mais pouvant servir pour une rénovation."
                 :price="22"
                 :renovation="true"
                 title="Velo marron"
@@ -110,9 +110,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 <p class="text-xs font-bold">Russel766</p>
                 <p class="text-xs text-orange">419 followers</p>
             </div>
-            <p class="text-sm flex items-center">Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua.</p>
+            <p class="text-sm flex items-center">Jeune artiste souhaitant lancer un skateshop sur Paris, influenceur Instagram</p>
         </div>
         </a>
 
@@ -124,7 +122,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 :distance="27"
                 state="Usé"
                 brand="Supreme"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                description="Skate peint lors d’une exposition sur Grenoble, peint à la bombe (peinture sur un modèle de base de Supreme)."
                 :price="40"
                 title="Skate peint"
                 pp="/images/small-painting.jpg"
@@ -144,7 +142,7 @@ import { RouterLink, RouterView } from 'vue-router'
             :distance="3"
             state="Neuf"
             brand="Santa cruz"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Don de mon skate neuf acheté l’été dernier pendant un voyage en Espagne."
             :price="5"
             title="Skate"
             pp="/images/balland.png"
@@ -168,7 +166,7 @@ import { RouterLink, RouterView } from 'vue-router'
             :distance="27"
             state="Usé"
             brand="Supreme"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Skate peint lors d’une exposition sur Grenoble, peint à la bombe (peinture sur un modèle de base de Supreme)."
             :price="40"
             title="Skate peint"
             pp="/images/small-painting.jpg"
@@ -189,7 +187,7 @@ import { RouterLink, RouterView } from 'vue-router'
             :distance="3"
             state="Neuf"
             brand="Santa cruz"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Don de mon skate neuf acheté l’été dernier pendant un voyage en Espagne."
             :price="5"
             title="Skate"
             pp="/images/balland.png"

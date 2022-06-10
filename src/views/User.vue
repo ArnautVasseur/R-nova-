@@ -10,9 +10,7 @@
         :star4="true"
         :star5="true"
         :note="5"
-        description="Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua."
+        description="Jeune artiste souhaitant lancer un skateshop sur Paris, influenceur Instagram."
         :followers="5909"
         image="/images/balland.png"/>
 
@@ -25,12 +23,8 @@ incididunt ut labore et dolore magna aliqua."
         <Evaluations class="mb-3"
         imageprofil1="/images/albert-dera-ILip77SbmOE-unsplash 2.jpg"
         imageprofil2="/images/ulysse-pointcheval-frI3NV2Qgmo-unsplash 2.jpg"
-        description1="Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua."
-        description2="Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua."
+        description1="Très bonne transaction, je remercie russel pour l’efficacité."
+        description2="L’achat n’a pas abouti… mais cordial et poli."
         :nombredejour1="2"
         :nombredejour2="5"
         :star1="true"
@@ -75,9 +69,7 @@ incididunt ut labore et dolore magna aliqua."
                     </svg>
                 </div>
                 <p class="text-xs text-left text-black">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Vélo bleu neuf acheter il y a quelques mois
                 </p>
             </div>
 
@@ -105,9 +97,7 @@ incididunt ut labore et dolore magna aliqua."
                     </svg>
                 </div>
                 <p class="text-xs text-left text-black">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Vieux vélo inutilisable rouillé mais pouvant servir pour une rénovation.
                 </p>
             </div>
         </div>
